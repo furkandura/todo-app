@@ -11,7 +11,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 
-class TestCommand extends Command
+class TaskDistribute extends Command
 {
     private TaskProviderFactory $taskProviderFactory;
     private EntityManagerInterface $em;
@@ -31,7 +31,7 @@ class TestCommand extends Command
 
     protected function configure()
     {
-        $this->setName("test:command");
+        $this->setName("task:distribute");
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
